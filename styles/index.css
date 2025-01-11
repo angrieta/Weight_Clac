@@ -1,0 +1,37 @@
+body {}
+body .bg{ width: 500px; margin: 0 auto; margin-top: 150px;}
+body .bg h1{
+    background-color: #6BB46D; text-align: center;
+    font-size: 2.5rem; font-weight: 700; color: #fff; 
+    padding: 20px 0; border: 15px solid #6BB46D;
+    border-top-left-radius: 15px; border-top-right-radius: 15px;
+}
+body .bg .clac_container{border: 15px solid #6BB46D;
+    border-top:0px;
+    border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; justify-content: center;
+}
+body .bg .clac_container .contents{text-align: center;} 
+body .bg .clac_container .contents h2{font-size: 1.25rem; color: #6BB46D; padding: 30px 0; font-weight: 700;}
+body .bg .clac_container .contents p{font-size: 0.75rem; line-height: 1.4; color: #6BB46D; padding: 0 15px; padding-bottom: 30px;   }
+body .bg .clac_container .clac_contents{text-align: center; padding-bottom: 30px;}
+body .bg .clac_container .clac_contents #heightNum{margin-right: 44px;}
+body .bg .clac_container .clac_contents #heightNum,
+body .bg .clac_container .clac_contents #weightNum{width: 183px; padding: 15px; border-radius: 5px; border: 1px solid #6BB46D; text-align: center; color: #6BB46D;}
+body .bg .clac_container .clac_contents #heightNum::placeholder,
+body .bg .clac_container .clac_contents #weightNum::placeholder{text-align: center; color: #6BB46D;}
+body .bg .clac_container #clacBtn{
+    width: 440px; text-align: center; background-color: #6BB46D; height: 50px; 
+    border-radius: 10px; margin: 40px 0; color: #fff; font-weight: 600;
+}
+body .bg .clac_container .result_container {
+    color: #6BB46D; background-color: #fff; width: 440px; 
+    display: inline-block; height: 110px;
+    border-radius: 10px; border: 1px solid #6BB46D;
+
+}
+body .bg .clac_container .result_container .result{
+    font-size: 1rem; font-weight: 600;
+    line-height: 1.4;
+    padding-top: 33px;
+    
+}

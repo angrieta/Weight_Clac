@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>눈물의 체중계 | 다이어트 동기부여</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./javascript/index.js" defer></script>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/tears.jpg" type="image/x-icon">
+    <link rel="icon" href="./images/tears.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="bg">
+        <h1>눈물의 체중계산기</h1>
+        <div class="clac_container">
+            <div class="contents">
+                <h2>비만도 측정(BMI지수)</h2>
+                <p>
+                    BMI를 이용한 비만도 계산은 자신의 몸무게를 키의 제곱으로 나누는 것으로 공식은 kg/㎡<br>
+                    .BMI가 18.5 이하면 저체중 ／18.5 ~ 22.9 사이면 정상 ／ 23.0 ~ 24.9 사이면 과체중<br>
+                    ／25.0 이상부터는 비만으로 판정.<br>
+                    ex) 키 170㎝에 몸무게 73kg이면, 계산식 : 73 / (1.7×1.7) = 25.26 → 과체중
+                </p>
+            </div>
+            <div class="clac_contents">
+                <input type="number" name="User_height" id="heightNum" placeholder="키(신체)를 입력하세요.">
+                <input type="number" name="User_weight" id="weightNum" placeholder="몸무게를 입력하세요.">
+                <button type="button" id="clacBtn">계산하기</button>
+                <div class="result_container">
+                    <p class="result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
