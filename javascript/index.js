@@ -17,14 +17,14 @@
 //1.본인체중 변수 설정 
 const bodyWeight = document.querySelector('#weightNum')
 //2.본인신장 변수 설정
-const bodyheight = document.querySelector('#heightNum')
+const bodyHeight = document.querySelector('#heightNum')
 //3.버튼 변수 설정
 const clacBtn = document.querySelector('#clacBtn')
 //4.result(p) 결과 값 변수 설정
 const result = document.querySelector('.result')
 
-clacBtn.addEventListener('click',function(){
-    const clacWeight = (bodyheight.value-100)*0.9 //적정체중
+clacBtn.addEventListener('click',function(reset){
+    const clacWeight = (bodyHeight.value-100)*0.9 //적정체중
     console.log(clacWeight, typeof clacWeight)
     //5.버튼을 눌렀을 때 적정체중이 계산되도록 변수 설정
     let allClac = Number(bodyWeight.value) - clacWeight 
@@ -33,5 +33,7 @@ clacBtn.addEventListener('click',function(){
     result.innerHTML = `적정 몸무게는${clacWeight}Kg 이며,<br> ${allClac}kg 초과되어버렸네요..`
     //7. 6번 총 계산 변수를 result(p) 결과 값 변수에 대입 [적정무게는 ()kg이며, ()kg 초과되셨습니다. ] 
     //8. 7번 () 값에 알맞은 변수 대입
+    bodyWeight.value = '';
+    bodyHeight.value = '';
 })
 
